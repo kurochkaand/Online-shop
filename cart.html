@@ -91,6 +91,13 @@
                 </div>
 
                 <div class="col-12">
+                  <label for="telephone" class="form-label">Telephone number</label>
+                  <input type="tel" class="form-control" id="telephone" value="+" pattern="+[0-9]{12}"  required />
+                  <div class="invalid-feedback">Please enter your telephone number.</div>
+                </div>
+
+
+                <div class="col-12">
                   <label for="address" class="form-label">Address</label>
                   <input type="text" class="form-control" id="address" placeholder="1234 Main St" required />
                   <div class="invalid-feedback">Please enter your shipping address.</div>
