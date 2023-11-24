@@ -1,23 +1,17 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
-import SidebarVue from "./components/Sidebar.vue";
 import Navigation from "./components/Navigation.vue";
 import Footer from "./components/Footer.vue";
+import MainBody from "./components/MainBody.vue";
 </script>
 
 <template>
   <Navigation />
-  <SidebarVue />
-  <Footer />
+  <MainBody />
+
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -30,6 +24,7 @@ import Footer from "./components/Footer.vue";
   </header>
 
   <RouterView />
+  <Footer />
 </template>
 
 <style scoped>
