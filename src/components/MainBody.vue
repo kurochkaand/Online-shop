@@ -11,15 +11,15 @@
 
     <div class="row" style="height: 180px">
       <div class="col-sm-4">
-        <img src="old/amethyst_neck.jpg" class="img-fluid" alt="amethyst_neck.jpg" />
+        <img src="old/amethyst_neck.jpg" class="img-fluid rounded" alt="amethyst_neck.jpg" />
         <p>AMETHYST necklace</p>
       </div>
       <div class="col-sm-4">
-        <img src="old/rose_quartz.jpg" class="img-fluid" alt="rose_quartz.jpg" />
+        <img src="old/rose_quartz.jpg" class="img-fluid rounded" alt="rose_quartz.jpg" />
         <p>ROSE QUARTZ necklace</p>
       </div>
       <div class="col-sm-4">
-        <img src="old/citrine.jpg" class="img-fluid" alt="citrine.jpg" />
+        <img src="old/citrine.jpg" class="img-fluid rounded" alt="citrine.jpg" />
         <p>CITRINE necklace</p>
       </div>
     </div>
