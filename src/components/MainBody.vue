@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div class="row" style="height: 180px">
+    <div class="row">
       <div class="col-sm-4">
         <img src="old/amethyst_neck.jpg" class="img-fluid rounded" alt="amethyst_neck.jpg" />
         <p>AMETHYST necklace</p>
@@ -25,4 +25,8 @@
     </div>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.col-sm-4 img:hover {
+  transform: scale(1.1);
+}
+</style>
