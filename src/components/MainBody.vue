@@ -27,9 +27,14 @@
     <div class="carousel-inner">
       <div class="carousel-item">
         <img src="obsidian3.jpg" />
+        <!-- Text for Image 1 -->
       </div>
       <div class="carousel-item active">
         <img src="carusel2.jpg" />
+        <div class="carousel-caption">
+          <h5 style="font-size: xx-large">BLACK FRIDAY IS HERE!</h5>
+          <p style="font-size: x-large">Up to 50% off discount</p>
+        </div>
       </div>
       <div class="carousel-item">
         <img src="carusel3.jpg" />
@@ -60,11 +65,19 @@
   <div class="container">
     <div class="row">
       <div class="container text-center">
-        <h3>
+        <p
+          style="
+            margin-top: 100px;
+            margin-bottom: 100px;
+            font-size: larger;
+
+            font-family: Arial, Helvetica, sans-serif;
+          "
+        >
           Embark on a crystal journey with us! Discover the perfect crystal that
           resonates with your unique personality and awakens your energy.
           Explore our collection now.
-        </h3>
+        </p>
       </div>
     </div>
 
@@ -97,11 +110,6 @@
   </div>
 </template>
 <style>
-.h3 {
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
 .col-sm-4 img:hover {
   transition: transform 0.5s ease;
   transform: scale(1.1);

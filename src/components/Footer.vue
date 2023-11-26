@@ -17,7 +17,7 @@
   width: 100%;
   background-color: #f0f0f0a7;
   padding: 20px;
-  margin: 0;
+  margin-top: 50px;
   text-align: center;
 }
 p {
