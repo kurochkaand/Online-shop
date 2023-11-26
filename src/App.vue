@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+//import { RouterLink, RouterView } from "vue-router";
+//import HelloWorld from "./components/HelloWorld.vue";
 import Navigation from "./components/Navigation.vue";
 import Footer from "./components/Footer.vue";
 import MainBody from "./components/MainBody.vue";
@@ -10,7 +10,7 @@ import MainBody from "./components/MainBody.vue";
   <Navigation />
   <MainBody />
 
-  <header>
+  <!--  <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -23,11 +23,12 @@ import MainBody from "./components/MainBody.vue";
     </div>
   </header>
 
-  <RouterView />
+  <RouterView />-->
   <Footer />
 </template>
 
 <style scoped>
+/*
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -89,4 +90,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+*/
 </style>
