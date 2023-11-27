@@ -1,9 +1,6 @@
 <template>
   <div class="container-fluid">
-    <nav
-      class="navbar navbar-expand-md navbar-dark fixed-top"
-      style="background-image: url(black_marmor.jpg)"
-    >
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-image: url(@/assets/black_marmor.jpg)">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Crystals</a>
         <button
@@ -28,12 +25,7 @@
               <a class="nav-link" href="Log_in.html">Log in</a>
             </li>
             <li class="nav-item">
-              <a
-                class="btn btn-outline-light"
-                aria-current="page"
-                href="cart.html"
-                >Cart</a
-              >
+              <a class="btn btn-outline-light" aria-current="page" href="cart.html">Cart</a>
             </li>
           </ul>
         </div>
