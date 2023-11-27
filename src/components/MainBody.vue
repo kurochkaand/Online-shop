@@ -14,7 +14,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item">
-        <img src="@/assets/obsidian3.jpg" />
+        <img src="/Projects/Online-shop/src/assets/obsidian3.jpg" />
         <!-- Text for Image 1 -->
       </div>
       <div class="carousel-item active">
