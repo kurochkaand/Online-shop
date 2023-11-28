@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-image: url(@/assets/black_marmor.jpg)">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-back">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Crystals</a>
         <button
@@ -33,3 +33,9 @@
     </nav>
   </div>
 </template>
+
+<style lang="scss">
+.nav-back {
+  background-image: url("@/assets/black_marmor.jpg");
+}
+</style>
