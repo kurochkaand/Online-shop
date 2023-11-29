@@ -5,7 +5,7 @@
       style="background-image: url(black_marmor.jpg)"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Crystals</a>
+        <RouterLink class="navbar-brand" to="/">Crystals</RouterLink>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Catalog</a>
+              <RouterLink class="nav-link" to="/about">About</RouterLink>
             </li>
           </ul>
           <ul class="navbar-nav">

@@ -6,7 +6,7 @@ import MainBody from "./components/MainBody.vue";
 
 <template>
   <Navigation />
-  <MainBody />
+  <RouterView />
   <Footer />
 </template>
 
