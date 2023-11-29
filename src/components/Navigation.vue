@@ -20,6 +20,9 @@
               <RouterLink class="nav-link" to="/about">About</RouterLink>
             </li>
             <li class="nav-item">
+              <RouterLink class="nav-link" to="/katia">katia</RouterLink>
+            </li>
+            <li class="nav-item">
               <RouterLink class="nav-link" to="/test">Test</RouterLink>
             </li>
           </ul>
