@@ -22,18 +22,16 @@
             <li class="nav-item">
               <RouterLink class="nav-link" to="/test">Test</RouterLink>
             </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/test2">Test2</RouterLink>
+            </li>
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="Log_in.html">Log in</a>
             </li>
             <li class="nav-item">
-              <a
-                class="btn btn-outline-light"
-                aria-current="page"
-                href="cart.html"
-                >Cart</a
-              >
+              <a class="btn btn-outline-light" aria-current="page" href="cart.html">Cart</a>
             </li>
           </ul>
         </div>
