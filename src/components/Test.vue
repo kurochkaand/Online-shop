@@ -6,5 +6,13 @@ const count = ref(0);
 </script>
 
 <template>
-  <button @click="count++">Count is: {{ count }}</button>
+  <div>
+    <button @click="count++">Count is: {{ count }}</button>
+  </div>
 </template>
+<style scoped>
+div {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+</style>
