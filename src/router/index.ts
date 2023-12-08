@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import MainBodyVue from "@/components/MainBody.vue";
 import TestVue from "@/components/Test.vue";
 import CartVue from "@/components/Cart.vue";
+/* import ConvertVue from "@/components/Convert.vue"; */
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +17,11 @@ const router = createRouter({
       path: "/test",
       name: "test",
       component: TestVue,
+    },
+    {
+      path: "/Convert",
+      name: "Convert",
+      component: ConvertVue,
     },
     {
       path: "/about",
