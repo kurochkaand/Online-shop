@@ -28,13 +28,20 @@
             <li class="nav-item">
               <RouterLink class="nav-link" to="/units_calculator">Units calculator</RouterLink>
             </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/ConvertAnna"
+                >Converter</RouterLink
+              >
+            </li>
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="/login">Log in</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-light" aria-current="page" href="/cart">Cart</a>
+              <a class="btn btn-outline-light" aria-current="page" href="/cart"
+                >Cart</a
+              >
             </li>
           </ul>
         </div>

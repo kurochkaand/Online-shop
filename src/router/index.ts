@@ -4,6 +4,7 @@ import MainBodyVue from "@/components/MainBody.vue";
 import TestVue from "@/components/Test.vue";
 import Units_calculatorVue from "@/components/Units_calculator.vue";
 import CartVue from "@/components/Cart.vue";
+/* import ConvertVue from "@/components/Convert.vue"; */
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: "/units_calculator",
       name: "Units calculator",
       component: Units_calculatorVue,
+    },
+    {
+      path: "/Convert",
+      name: "Convert",
+      component: ConvertVue,
     },
     {
       path: "/about",
