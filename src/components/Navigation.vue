@@ -26,7 +26,7 @@
               <RouterLink class="nav-link" to="/test">Test</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/units_calculator">Units calculator</RouterLink>
+              <RouterLink class="nav-link" to="/test2">Test2</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/ConvertAnna"
