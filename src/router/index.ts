@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import MainBodyVue from "@/components/MainBody.vue";
-import TestVue from "@/components/Test.vue";
+import Weight_calc from "@/components/Weight_calc.vue";
 import CartVue from "@/components/Cart.vue";
 /* import ConvertVue from "@/components/Convert.vue"; */
 
@@ -14,15 +14,15 @@ const router = createRouter({
       component: MainBodyVue,
     },
     {
-      path: "/test",
-      name: "test",
-      component: TestVue,
+      path: "/weight_calc",
+      name: "weight_calc",
+      component: Weight_calc,
     },
-    {
-      path: "/Convert",
-      name: "Convert",
-      component: ConvertVue,
-    },
+    //   {
+    //     path: "/Convert",
+    //     name: "Convert",
+    //     component: ConvertVue,
+    //   },
     {
       path: "/about",
       name: "about",
