@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import MainBodyVue from "@/components/MainBody.vue";
 import TestVue from "@/components/Test.vue";
+import Units_calculatorVue from "@/components/Units_calculator.vue";
 import CartVue from "@/components/Cart.vue";
 
 const router = createRouter({
@@ -16,6 +17,11 @@ const router = createRouter({
       path: "/test",
       name: "test",
       component: TestVue,
+    },
+    {
+      path: "/units_calculator",
+      name: "Units calculator",
+      component: Units_calculatorVue,
     },
     {
       path: "/about",
