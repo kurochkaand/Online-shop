@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import MainBodyVue from "@/components/MainBody.vue";
 import Weight_calc from "@/components/Weight_calc.vue";
 import CartVue from "@/components/Cart.vue";
-/* import ConvertVue from "@/components/Convert.vue"; */
+import Convert from "@/components/Convert.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,11 +18,11 @@ const router = createRouter({
       name: "weight_calc",
       component: Weight_calc,
     },
-    //   {
-    //     path: "/Convert",
-    //     name: "Convert",
-    //     component: ConvertVue,
-    //   },
+    {
+      path: "/convert",
+      name: "convert",
+      component: Convert,
+    },
     {
       path: "/about",
       name: "about",

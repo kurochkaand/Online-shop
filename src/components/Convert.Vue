@@ -1,6 +1,22 @@
-<template></template>
-<!-- <template>
- 
+<template>
+  <h1>hello</h1>
+  <h1>hello</h1>
+  <h1>hello</h1>
+  <h1>hello</h1>
+  <h1>hello</h1>
+  <h1>hello</h1>
+  <h1>hello</h1>
+  <h1>hello</h1>
+  <h1>hello</h1>
+</template>
+<style>
+h1 {
+  margin-bottom: 100px;
+  background-color: black;
+}
+</style>
+<!--
+<template>
   <div id="app">
     <h2>Price calculator with currency rate</h2>
 
@@ -38,7 +54,6 @@
   </div>
 </template>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script>
 new Vue({
   el: "#app",
