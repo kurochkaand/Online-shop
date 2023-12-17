@@ -1,42 +1,24 @@
 <template>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-</template>
-<style>
-h1 {
-  margin-bottom: 100px;
-  background-color: black;
-}
-</style>
-<!--
-<template>
   <div id="app">
     <h2>Price calculator with currency rate</h2>
 
     <div>
-      <label for="quantity">Quantity:</label>
+      <label for="quantity">Quantity: </label>
       <input type="number" v-model="quantity" @input="calculateTotal" />
     </div>
 
     <div>
-      <label for="price">Price per unit:</label>
+      <label for="price">Price per unit: </label>
       <input type="number" v-model="price" @input="calculateTotal" />
     </div>
 
     <div>
-      <label for="discount">Discount (%):</label>
+      <label for="discount">Discount (%): </label>
       <input type="number" v-model="discount" @input="calculateTotal" />
     </div>
 
     <div>
-      <label for="currency">Currency:</label>
+      <label for="currency">Currency: </label>
       <select v-model="selectedCurrency" @change="calculateTotal">
         <option
           v-for="currency in currencies"
@@ -55,22 +37,41 @@ h1 {
 </template>
 
 <script>
+Vue.component("currency-selector", {
+  props: ["currencies", "selectedCurrency"],
+  template: `
+    <div>
+      <label for="currency">Currency:</label>
+      <select v-model="selectedCurrency" @change="$emit('change')">
+        <option v-for="currency in currencies" :key="currency.code" :value="currency.code">{{ currency.name }}</option>
+      </select>
+    </div>
+  `,
+});
+
 new Vue({
   el: "#app",
-  data: {
-    quantity: 1,
-    price: 10,
-    discount: 0,
-    selectedCurrency: "USD",
-    currencies: [],
-    totalPrice: 0,
+  data() {
+    return {
+      quantity: 1,
+      price: 10,
+      discount: 0,
+      selectedCurrency: "USD",
+      currencies: [],
+      totalPrice: 0,
+    };
   },
   computed: {
     formattedTotalPrice() {
       const selectedCurrency = this.currencies.find(
         (currency) => currency.code === this.selectedCurrency
       );
-      return (this.totalPrice * selectedCurrency.exchangeRate).toFixed(2);
+
+      if (selectedCurrency) {
+        return (this.totalPrice * selectedCurrency.exchangeRate).toFixed(2);
+      } else {
+        return "N/A";
+      }
     },
   },
   methods: {
@@ -85,8 +86,9 @@ new Vue({
           name: code,
           exchangeRate: data.rates[code],
         }));
+        console.log("Fetched currencies:", this.currencies);
       } catch (error) {
-        console.error("Error fetching currencies:", error);
+        console.error("Error fetching currencies:", error.message);
       }
     },
     calculateTotal() {
@@ -104,4 +106,20 @@ new Vue({
   },
 });
 </script>
--->
+
+<style>
+#app {
+  margin: auto;
+  margin-top: 10px;
+}
+label,
+input {
+  margin: 8px 0px;
+}
+input {
+  border: solid 2px black;
+}
+input:hover {
+  border: solid 2px green;
+}
+</style>
