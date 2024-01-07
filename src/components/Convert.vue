@@ -1,19 +1,9 @@
-<script setup lang="ts">
-Vue.component("currency-selector", {
-  props: ["currencies", "selectedCurrency"],
+<script lang="ts">
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import { defineComponent } from "@vue/runtime-core";
 
-  template: `
-      <div>
-        <label for="currency">Currency:</label>
-        <select v-model="selectedCurrency" @change="$emit('change')">
-          <option v-for="currency in currencies" :key="currency.code" :value="currency.code">{{ currency.name }}</option>
-        </select>
-      </div>
-    `,
-});
-
-new Vue({
-  el: "#app",
+export default defineComponent({
   data() {
     return {
       quantity: 1,
@@ -26,7 +16,7 @@ new Vue({
   },
   computed: {
     formattedTotalPrice() {
-      const selectedCurrency = this.currencies.find((currency) => currency.code === this.selectedCurrency);
+      const selectedCurrency = this.currencies.find((currency: any) => currency.code === this.selectedCurrency);
 
       if (selectedCurrency) {
         return (this.totalPrice * selectedCurrency.exchangeRate).toFixed(2);
