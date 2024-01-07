@@ -1,5 +1,5 @@
 <!--Weight units calculator-->
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 
 const carats = ref(0);
