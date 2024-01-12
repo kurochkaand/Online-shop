@@ -16,7 +16,9 @@ export default defineComponent({
   },
   computed: {
     formattedTotalPrice() {
-      const selectedCurrency = this.currencies.find((currency: any) => currency.code === this.selectedCurrency);
+      const selectedCurrency = this.currencies.find(
+        (currency: any) => currency.code === this.selectedCurrency
+      );
 
       if (selectedCurrency) {
         return (this.totalPrice * selectedCurrency.exchangeRate).toFixed(2);
@@ -28,7 +30,9 @@ export default defineComponent({
   methods: {
     async fetchCurrencies() {
       try {
-        const response = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
+        const response = await fetch(
+          "https://api.exchangerate-api.com/v4/latest/USD"
+        );
         const data = await response.json();
         this.currencies = Object.keys(data.rates).map((code) => ({
           code,
@@ -42,8 +46,15 @@ export default defineComponent({
     },
     calculateTotal() {
       const discountedPrice = this.price - (this.price * this.discount) / 100;
-      const selectedCurrency = this.currencies.find((currency) => currency.code === this.selectedCurrency);
-      this.totalPrice = this.quantity * discountedPrice * selectedCurrency.exchangeRate;
+      const selectedCurrency = this.currencies.find(
+        (currency) => currency.code === this.selectedCurrency
+      );
+      if (!selectedCurrency) {
+        this.totalPrice = "cannot calculate";
+        return;
+      }
+      this.totalPrice =
+        this.quantity * discountedPrice * selectedCurrency.exchangeRate;
     },
   },
   mounted() {
@@ -75,7 +86,11 @@ export default defineComponent({
     <div>
       <label for="currency">Currency: </label>
       <select v-model="selectedCurrency" @change="calculateTotal">
-        <option v-for="currency in currencies" :key="currency.code" :value="currency.code">
+        <option
+          v-for="currency in currencies"
+          :key="currency.code"
+          :value="currency.code"
+        >
           {{ currency.name }}
         </option>
       </select>
