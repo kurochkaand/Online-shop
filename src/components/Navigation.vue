@@ -28,6 +28,9 @@
               >
             </li>
             <li class="nav-item">
+              <RouterLink class="nav-link" to="/test2">Test2</RouterLink>
+            </li>
+            <li class="nav-item">
               <RouterLink class="nav-link" to="/Convert">Converter</RouterLink>
             </li>
           </ul>
