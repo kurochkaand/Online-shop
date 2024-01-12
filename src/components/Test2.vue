@@ -1,13 +1,24 @@
-<script setup lang="ts">
-import { ref, onMounted } from "vue";
+<script lang="ts">
+import { defineComponent } from "@vue/runtime-core";
 
-// reactive state
-const count = ref(0);
+export default defineComponent({
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  methods: {
+    updateCounter() {
+      this.count++;
+    },
+  },
+});
 </script>
 
 <template>
   <div>
-    <button @click="count++">Count is: {{ count }}</button>
+    <button @click="updateCounter">Count is: {{ count }}</button>
+    <input v-model="count" />
   </div>
 </template>
 <style scoped>
