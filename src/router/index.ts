@@ -5,6 +5,7 @@ import Weight_calc from "@/components/Weight_calc.vue";
 import CartVue from "@/components/Cart.vue";
 import Convert from "@/components/Convert.vue";
 import Test2Vue from "@/components/Test2.vue";
+import TestVue from "@/components/Test.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,6 +42,11 @@ const router = createRouter({
       path: "/test2",
       name: "test2",
       component: Test2Vue,
+    },
+    {
+      path: "/test",
+      name: "test",
+      component: TestVue,
     },
   ],
 });

@@ -23,9 +23,10 @@
               <RouterLink class="nav-link" to="/katia">katia</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/weight_calc"
-                >Weight Calculator</RouterLink
-              >
+              <RouterLink class="nav-link" to="/weight_calc">Weight Calculator</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/test">Test</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/test2">Test2</RouterLink>
@@ -39,9 +40,7 @@
               <a class="nav-link" href="/login">Log in</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-light" aria-current="page" href="/cart"
-                >Cart</a
-              >
+              <a class="btn btn-outline-light" aria-current="page" href="/cart">Cart</a>
             </li>
           </ul>
         </div>
