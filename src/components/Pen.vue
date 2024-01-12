@@ -10,5 +10,13 @@ export default {
 </script>
 
 <template>
-  {{ $props.title }}
+  <div>
+    {{ $props.title }}
+  </div>
 </template>
+
+<style scoped>
+div {
+  background: #0f0;
+}
+</style>
